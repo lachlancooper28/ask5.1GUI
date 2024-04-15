@@ -1,15 +1,15 @@
 from tkinter import *
 import tkinter.font
 from gpiozero import LED
-# Defining LEDs to Raspberry Pi pins
+# led set
 led_red = LED(14)
 led_green = LED(15)
 led_blue = LED(18)
-# Creating GUI for LED toggling
+# gui
 win = Tk()
 win.title("LED Toggler")
 myFont = tkinter.font.Font(family='Helvetica', size=12, weight="bold")
-# Defining functions for all 3 LEDs
+# functions
 def ledToggle_red():
     if led_green.is_lit:
         led_green.off()
